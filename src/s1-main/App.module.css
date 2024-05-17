@@ -1,11 +1,18 @@
 .App {
+    display: flex;
+    flex-direction: column;
     --header_height: 60px;
+    position: relative;
+    /*padding: 20px;*/
 }
 
 .hw {
-
+    width: 90%;
+    margin: auto;
 }
 
 .hwTitle {
-
+    margin-left: 40px;
+    padding: 20px;
+    font-size: 30px;
 }

@@ -3,11 +3,13 @@
 }
 
 .friendImageAndText {
-
+display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .friendImageAndText img {
-
+width: 50px;
 }
 
 .friendText {
@@ -23,9 +25,9 @@
 }
 
 .friendMessageText {
-
 }
 
 .friendTime {
+    padding: 0 5px;
 
 }

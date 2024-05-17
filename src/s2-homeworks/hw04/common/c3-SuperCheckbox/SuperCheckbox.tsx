@@ -4,6 +4,8 @@ import React, {
     InputHTMLAttributes,
 } from 'react'
 import s from './SuperCheckbox.module.css'
+import image from './checked.png'
+import imageGreen from './checked.svg'
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
@@ -28,7 +30,8 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
         // задачка на написание онченджа
-
+        onChangeChecked && onChangeChecked(e.currentTarget.checked)
+        onChange && onChange(e)
     }
 
     const finalInputClassName = s.checkbox
@@ -37,6 +40,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
     return (
         <label className={s.label}>
             <input
+                // src={imageGreen}
                 id={id}
                 type={'checkbox'}
                 onChange={onChangeCallback}

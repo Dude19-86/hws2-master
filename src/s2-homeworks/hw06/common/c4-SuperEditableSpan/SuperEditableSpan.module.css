@@ -5,7 +5,13 @@
 }
 
 .input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: 300px;
 }
 
 .pen {
+    width: 16px;
+    height: 15.94px;
 }
